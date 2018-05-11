@@ -1,4 +1,7 @@
-var a = {
+Question- Write a function that takes Season number and episode number as input
+and gives all the information about that particular episode as output
+
+{
   "id": 66,
   "url": "http:\/\/www.tvmaze.com\/shows\/66\/the-big-bang-theory",
   "name": "The Big Bang Theory",
@@ -5261,7 +5264,7 @@ var a = {
   }
 }
 
-
+Solution:
 
 let inputSeasonNumber = prompt('enter season number')
 let inputEpisodeNumber = prompt('Enter the episode number')
