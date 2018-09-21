@@ -1,7 +1,12 @@
-Question- Write a function that takes Season number and episode number as input
+Question-
+
+1. Write a function to take pokemon’s name as argument and display the
+information of that pokemon
+
+2. Write a function that takes Season number and episode number as input
 and gives all the information about that particular episode as output
 
-{
+var a = {
   "id": 66,
   "url": "http:\/\/www.tvmaze.com\/shows\/66\/the-big-bang-theory",
   "name": "The Big Bang Theory",
@@ -5264,7 +5269,35 @@ and gives all the information about that particular episode as output
   }
 }
 
-Solution:
+
+Solution 1:
+
+var pokemonName = window.prompt('enter pokemon name')
+var detailsOfPokemon = function(pokemonName,a)
+{
+  for( var x in a.pokemon)
+  {
+    if(a.pokemon[x].name==pokemonName)
+    {
+      console.log(a.pokemon[x])
+      alert('found')
+      break
+      
+    }
+    else
+      {
+        alert("Not found")
+}
+
+
+  }
+}
+detailsOfPokemon(pokemonName,a)
+
+
+
+
+Solution 2:
 
 let inputSeasonNumber = prompt('enter season number')
 let inputEpisodeNumber = prompt('Enter the episode number')
@@ -5281,3 +5314,5 @@ let details = function(inputEpisodeNumber,inputSeasonNumber,a)
   }
 }
 details(inputEpisodeNumber,inputSeasonNumber,a)
+
+
